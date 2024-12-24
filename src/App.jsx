@@ -1,5 +1,6 @@
 
 import QuoteBox from './QuoteBox'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
