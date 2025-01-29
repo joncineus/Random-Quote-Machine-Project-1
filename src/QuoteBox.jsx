@@ -20,7 +20,7 @@ function QuoteBox(){
 async function fetchQuote(){
     setIsLoading(true); //Loading while getting the functions is true
     try {
-        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness', options); 
+        const response = await fetch('https://api.api-ninjas.com/v1/quotes', options); 
         //Method and API key to get the function
         if(!response.ok){
             throw new Error("We Can't Fetch any data") //If you cannot get anymore data, throws error
@@ -41,7 +41,6 @@ async function fetchQuote(){
     useEffect(() => {
         fetchQuote();
     }, []); // Empty dependency array means this runs only once
-
 
 
     return(
